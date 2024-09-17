@@ -15,7 +15,7 @@ for p in $addpaths
   end
 end
 
-if command nvim
+if command -q nvim
   set -gx EDITOR nvim
 else
   set -gx EDITOR vim
