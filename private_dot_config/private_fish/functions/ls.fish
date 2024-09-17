@@ -1,6 +1,6 @@
-if command -q exa
+if command -q eza
     function ls
-        exa --icons -a $argv
+        eza --icons -a $argv
     end
 end
 
