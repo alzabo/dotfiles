@@ -1,17 +1,17 @@
-set addpaths \
-  ~/bin \
-  # ~/zig-linux-x86_64-0.13.0-dev.75+5c9eb4081 \
-  ~/zig-linux-x86_64-0.12.0 \
-  /usr/local/go/bin \
-  ~/go/bin \
-  ~/.cargo/bin
+set -a p ~/bin
+set -a p ~/zig-linux-x86_64-0.12.0
+set -a p /usr/local/go/bin
+set -a p ~/go/bin
+set -a p ~/.cargo/bin
+set -a p ~/.local/bin
+# set -a p ~/zig-linux-x86_64-0.13.0-dev.75+5c9eb4081
 
-for p in $addpaths
-  if contains $p $PATH
+for path in $p
+  if contains $path $PATH
     continue
   end
-  if test -e $p
-    set -ag PATH $p
+  if test -e $path
+    set -ag PATH $path
   end
 end
 
