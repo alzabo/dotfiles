@@ -15,7 +15,7 @@
 ## Git
 - Branch per change for your work; never commit to main directly.
 - Prompt me before commit, push, and PR creation. Do not do any unprompted.
-- Commit messages: descriptive but terse.
+- Commit messages: imperative mood, descriptive but terse. Follow the repo's prevailing style — subject-only is fine where that's the norm; add a body only when the diff needs context.
 - No emojis in commit messages, PR titles, or PR bodies.
 
 ## Code
