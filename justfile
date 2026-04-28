@@ -1,6 +1,8 @@
 link_src := '''
 .config/
 .tmux.conf
+.claude/CLAUDE.md
+.claude/settings.json
 '''
 
 link_all:
